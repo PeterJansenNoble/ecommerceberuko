@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color:#8c9eff;
+  background-color:#ffffff;
 }
 
 .page-wrapper {
@@ -308,8 +308,13 @@ body {
   </style>
 
 {%if products%}
-<h3 style="text-align:center; color:yellow;">{{word}}</h3>
+
+<h3 font-style="" style="text-align:center; color:yellow;">{{word}}</h3>
 <br>
+
+
+
+
 <!-- products data starttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
   <div class="row">
 
@@ -337,7 +342,7 @@ body {
                 </div>
 
                 <a class="cart" href="{% url 'add-to-cart' p.id  %}">
-                  <span class="price">₹ {{p.price}}</span>
+                  <span class="price">Php {{p.price}}</span>
                   <span class="add-to-cart">
                     <span class="txt">Add in cart</span>
                   </span>
@@ -372,12 +377,5 @@ body {
 </script>
 <br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
 
 {% endblock content %}

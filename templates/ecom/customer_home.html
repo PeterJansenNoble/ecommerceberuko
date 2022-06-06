@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  background-color:#8c9eff;
+  background-color:#ffffff;
 }
 
 .page-wrapper {
@@ -313,7 +313,7 @@ body {
 
 
   {%if products%}
-  <h3 style="text-align:center; color:yellow;">{{word}}</h3>
+  <h3 style="text-align:center; color:rgb(0, 0, 0);">{{word}}</h3>
   <br>
   <!-- products data starttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
   <div class="row">
@@ -329,7 +329,7 @@ body {
                 <img class="img" src="{% static p.product_image.url %}" alt="product pic" height="300px" width="300px">
                 <div class="img-info">
                   <div class="info-inner">
-                    <span style="background-color:#08050a; color:yellow;" class="p-company">{{p.name}}</span>
+                    <span style="background-color:#ffffff; color:rgb(0, 0, 0);" class="p-company">{{p.name}}</span>
 
                   </div>
                   <div class="a-size">{{p.description}}</div>
@@ -342,7 +342,7 @@ body {
                 </div>
 
                 <a class="cart" href="{% url 'add-to-cart' p.id  %}">
-                  <span class="price">₹ {{p.price}}</span>
+                  <span class="price">Php {{p.price}}</span>
                   <span class="add-to-cart">
                     <span class="txt">Add in cart</span>
                   </span>
@@ -366,7 +366,7 @@ body {
 
 
 {%else%}
-<h3 style="text-align:center; color:yellow;">No Search Found</h3>
+<h3 style="text-align:center; color:rgb(0, 0, 0);">No Search Found</h3>
 {%endif%}
 
 <script>
@@ -379,12 +379,6 @@ body {
 <br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
 
 
 
